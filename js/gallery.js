@@ -113,11 +113,16 @@ function openLightbox(index) {
       element
         .querySelector('.lightbox-arrow-next')
         .addEventListener('click', showNextImage);
+
+      window.addEventListener('keydown', onKeyPress);
+    },
+    onClose: () => {
+      window.removeEventListener('keydown', onKeyPress);
+      lightboxInstance = null;
     },
   });
 
   lightboxInstance.show();
-  window.addEventListener('keydown', onKeyPress);
 }
 
 function updateLightboxContent() {
@@ -145,7 +150,6 @@ function showNextImage() {
 function onKeyPress(event) {
   if (event.key === 'Escape') {
     lightboxInstance.close();
-    window.removeEventListener('keydown', onKeyPress);
   }
 
   if (event.key === 'ArrowLeft') {
