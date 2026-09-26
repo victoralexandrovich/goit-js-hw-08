@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # GoIT JS Homework 07 - DOM & Events
 JavaScript homework assignment for the GoIT course (Module 7). Topic: Document Object Model (DOM), element creation, handling user events (`input`, `submit`, `click`), and working with forms (`FormData`).
 
@@ -27,3 +28,6 @@ JavaScript homework assignment for the GoIT course (Module 7). Topic: Document O
 =======
 # goit-js-hw-07
 >>>>>>> f9cea4c2b8092092385f654aab5395bf3cac2e5e
+=======
+# goit-js-hw-08
+>>>>>>> 75c7e63e5b7a0db68b4639cf1c9222813e1363dc
