@@ -1,33 +1,23 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# GoIT JS Homework 07 - DOM & Events
-JavaScript homework assignment for the GoIT course (Module 7). Topic: Document Object Model (DOM), element creation, handling user events (`input`, `submit`, `click`), and working with forms (`FormData`).
+# GoIT JS Homework 08 - Image Gallery & Modal Window
+JavaScript homework assignment for the GoIT course (Module 8). Topic: creating a dynamic image gallery, event delegation, handling default behavior, and integrating the external modal library `basicLightbox`.
 
 **What was done:**
-- Set up the repository `goit-js-hw-07` and configured the project structure according to the course requirements
-- **Task 1 (List Categories):** Implemented a script to count the number of categories in `ul#categories`, and retrieved each category title and child item count using DOM traversal and loops
-- **Task 2 (Image Gallery):** Created an image gallery dynamically from an `images` array using template literals and `insertAdjacentHTML()` to append all elements to `ul.gallery` in a single DOM operation, styled with CSS flexbox
-- **Task 3 (Name Input Greeting):** Implemented an `input` event listener on `input#name-input` to dynamically update `span#name-output`, trimming whitespace and defaulting to `"Anonymous"` for empty inputs
-- **Task 4 (Login Form):** Managed the `submit` event on `login-form` to prevent page reloads, validate empty fields with an `alert`, collect trimmed data into an object using `FormData`, log it to the console, and reset the form
-- **Task 5 (Random Background Color):** Added a `click` event listener to `button.change-color` to dynamically change the `<body>` background using `getRandomHexColor()` and display the resulting HEX code inside `span.color`
+- Set up the repository `goit-js-hw-08` and configured the project structure (`index.html` and `gallery.js`)
+- **Gallery Markup & Rendering:** Dynamically generated and inserted gallery card elements into `ul.gallery` using the `images` dataset, template literals, and a single DOM injection operation
+- **Event Delegation & Default Behavior:** Implemented event delegation on the gallery container to listen for clicks on image items, preventing the default browser behavior of opening or downloading links via `e.preventDefault()`
+- **Modal Window Integration (`basicLightbox`):** Connected the `basicLightbox` library via CDN, enabling interactive full-size image previews by retrieving the high-resolution source from the `data-source` attribute
+- **Keyboard Controls & UX:** Added functionality to safely open and close modal views, including handling the `Escape` key press event exclusively while the modal window is active
 - Verified code formatting with Prettier and ensured zero errors or warnings in the browser console across all tasks via GitHub Pages
 
 ---
 
-# Домашнє завдання 07 GoIT JS — DOM та події
-Практичне завдання з курсу JavaScript від GoIT (Модуль 7). Тема: об'єктна модель документа (DOM), створення елементів, обробка подій користувача (`input`, `submit`, `click`) та робота з формами (`FormData`).
+# Домашнє завдання 08 GoIT JS — Галерея зображень та модальне вікно
+Практичне завдання з курсу JavaScript від GoIT (Module 8). Тема: створення динамічної галереї зображень, делегування подій, скасування поведінки за замовчуванням та інтеграція зовнішньої бібліотеки модальних вікон `basicLightbox`.
 
 **Що зроблено:**
-- Створено репозиторій `goit-js-hw-07` та налаштовано структуру проєкту відповідно до вимог курсу
-- **Задача 1 (Категорії списку):** Написано скрипт для підрахунку кількості категорій у списку `ul#categories`, який виводить назву кожної категорії та кількість вкладених елементів за допомогою методів DOM
-- **Задача 2 (Галерея зображень):** Створено та додано до DOM галерею із шести зображень на основі масиву об'єктів за одну операцію додавання з використанням Flexbox-стилізації
-- **Задача 3 (Привітання за ім'ям):** Налаштовано слухач події `input` для динамічного оновлення тексту у `span#name-output` із фільтрацією зайвих пробілів та виведенням значення `"Anonymous"` за замовчуванням
-- **Задача 4 (Форма логіна):** Реалізовано обробку події `submit` із запобіганням перезавантаженню сторінки, перевіркою на заповнені поля, збором даних через `FormData`, виведенням результату в консоль та очищенням форми
-- **Задача 5 (Випадковий колір фону):** Реалізовано зміну кольору фону елемента `<body>` за кліком на кнопку з використанням функції `getRandomHexColor()`, із синхронним відображенням коду кольору у `span.color`
+- Створено репозиторій `goit-js-hw-08` та налаштовано структуру проєкту (`index.html` та `gallery.js`)
+- **Розмітка та рендеринг галереї:** Динамічно створено картки зображень на основі масиву `images` із використанням шаблонних рядків та додано їх до `ul.gallery` за одну операцію
+- **Делегування подій та скасування поведінки:** Налаштовано слухач подій із використанням прийому делегування на контейнері галереї та скасовано стандартну поведінку посилань за допомогою `e.preventDefault()`
+- **Інтеграція модального вікна (`basicLightbox`):** Підключено бібліотеку `basicLightbox` через CDN для перегляду повнорозмірних копій фото з динамічною підстановкою посилань з `data-source` атрибута
+- **Керування з клавіатури:** Реалізовано відкриття та закриття модального вікна з підтримкою клавіші `Escape`, із прослуховуванням подій клавіатури лише під час активного стану модалки
 - Перевірено форматування коду за допомогою Prettier, а також відсутність будь-яких помилок чи попереджень у консолі на живій сторінці GitHub Pages
-=======
-# goit-js-hw-07
->>>>>>> f9cea4c2b8092092385f654aab5395bf3cac2e5e
-=======
-# goit-js-hw-08
->>>>>>> 75c7e63e5b7a0db68b4639cf1c9222813e1363dc
